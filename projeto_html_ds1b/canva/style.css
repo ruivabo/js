@@ -1,0 +1,36 @@
+.animated-box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+
+    animation: moveBox 3s ease-in-out infinite;
+}
+#tela{
+    background-color:bisque ;
+}
+@keyframes moveBox{
+    0%{
+        left: 0;
+        top: 0;
+    }
+        25%{
+            top: 0px;
+            left:200px;
+        }
+    
+    50%{
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        top:200px;
+        left:0;
+    }
+    100%{
+        left: 0px;
+        top:0px;
+        
+
+    }
+}

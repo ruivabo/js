@@ -1,0 +1,227 @@
+No código, a cobra encontra a comida quando as coordenadas da cabeça dela coincidem com a comida. Isso é selecionado na função moveSnake,
+
+Comandos:
+
+Javascript-escritor
+
+Copiar código
+if (head.x === food.x && head.y === food.y) {
+    
+    generateFood
+
+    generate
+
+   
+generateFood(); // Gera uma nova comida
+} else {
+    snake.
+   
+pop(); // Remove a cauda se a comida não foi comida
+}
+_________________________________________________________________
+
+Como evitar ultrapassar as bordas da tela
+Para evitar que a cobra ultrapasse as bordas, a funçãocheckCollisionverificar
+
+Comandos:
+
+Javascript-escritor
+
+Copiar código
+if (
+    snake[
+    snake[
+
+    snake
+
+   
+0].x < 0 || // Fora à esquerda
+    snake[
+    snake
+0].x >= canvas.width || // Fora à direita
+    snake[
+    snake[
+
+    snake
+
+   
+0].y < 0 || // Fora em cima
+    snake[
+    snake[
+0].y >= canvas.height // Fora embaixo
+) {
+    
+) {
+   
+
+) {
+
+)
+return true; // Colisão detectada
+}
+___________________________________________________________________________________-
+
+function moveSnake() {
+    
+   
+const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+    snake.
+    snake
+
+   
+unshift(head);
+
+    
+
+if (head.x === food.x && head.y === food.y) {
+        
+        generate
+generateFood(); // Nova comida gerada
+    } 
+    }
+
+   
+else {
+        snake.
+        snake
+pop(); // Movimento normal
+    }
+}
+
+
+    }
+
+   
+function checkCollision() {
+    
+   
+if (
+        snake[
+        snake
+
+       
+0].x < 0 ||
+        snake[
+        snake
+0].x >= canvas.width ||
+        snake[
+        snake[
+
+        snake
+
+       
+0].y < 0 ||
+        snake[
+        snake[
+
+       
+0].y >= canvas.height
+    ) {
+        
+    ) {
+       
+
+   
+return true;
+    }
+
+    
+    }
+
+   
+
+    }
+
+
+   
+for (let i = 1; i < snake.length; i++) {
+        if (snake[i].x === snake[0].x && snake[i].y === snake[0].y) {
+            
+           
+return true;
+        }
+    }
+    
+        }
+    }
+
+        }
+   
+return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

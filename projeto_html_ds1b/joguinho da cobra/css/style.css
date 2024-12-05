@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    }
+    
+    canvas {
+    border: 1px solid #fff;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #333;
+        }
+        
+        /* Estilo do canvas */
+        canvas {
+        border: 2px solid white;
+        background-color:rgb(255, 154, 154);
+        }
